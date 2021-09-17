@@ -1,8 +1,9 @@
 public class ContaCorrente {
+
     public string titular;
     public int agencia;
     public int conta;
-    public double saldo;
+    public double saldo {get; private set;}
 
     public ContaCorrente(){} //Boas praticas que devem sempre ser seguidas
 
@@ -34,7 +35,7 @@ public class ContaCorrente {
             return false;
         }
         else{
-            this.saldo -= valor;
+            this.Sacar(valor);
             contaDestino.Depositar(valor);
             return true;
         }

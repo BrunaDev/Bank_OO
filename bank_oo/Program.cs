@@ -15,18 +15,18 @@ namespace bank_oo
             Console.WriteLine("O titular da conta é: "+contaDoPedro.titular);*/
 
             //Saque
-            bool retorno = contaDaBruna.Sacar(50);
-            Console.WriteLine(retorno);
+            contaDaBruna.Sacar(20);
             Console.WriteLine("O saldo da conta da Bruna é: " + contaDaBruna.saldo);
             
             //Deposito
-            contaDaBruna.Depositar(30);
+            /*contaDaBruna.Depositar(30);
             Console.WriteLine("O saldo da conta da Bruna é: " + contaDaBruna.saldo);
 
             //Trasferencia
             contaDaBruna.Transferir(100, contaDoPedro);
+
             Console.WriteLine("O saldo da conta da Bruna é: " + contaDaBruna.saldo);
-            Console.WriteLine("O saldo da conta do Pedro é: " + contaDoPedro.saldo);
+            Console.WriteLine("O saldo da conta do Pedro é: " + contaDoPedro.saldo);*/
         }
     }
 
