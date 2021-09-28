@@ -3,6 +3,8 @@ public class ContaCorrente {
     public string Titular { get; set; }
     public int Agencia { get; set; }
     public int Conta { get; set; }
+    
+    public static int TotalDeContasCriadas { get; set; }
 
     private double _saldo;
 
@@ -15,7 +17,8 @@ public class ContaCorrente {
                     this._saldo = value;
                 }
             }
-        }
+    }
+
 
     public ContaCorrente(){} //Boas praticas que devem sempre ser seguidas
 
@@ -25,6 +28,8 @@ public class ContaCorrente {
         Titular = contacorrente_titular;
         Agencia = contacorrente_agencia;
         Saldo = contacorrente_saldo;
+
+        TotalDeContasCriadas ++;
 
     }
 

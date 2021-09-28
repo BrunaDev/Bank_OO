@@ -19,6 +19,8 @@ namespace bank_oo
             contaDaBruna.Sacar(120);
             Console.WriteLine("O saldo da conta da Bruna é: " + contaDaBruna.Saldo);
             Console.WriteLine("O número da conta da Bruna é: " + contaDaBruna.Conta);
+
+            Console.WriteLine("Total de contas criadas: " + ContaCorrente.TotalDeContasCriadas);
             
             //Trasferencia
             /*contaDaBruna.Transferir(120, contaDoPedro);
