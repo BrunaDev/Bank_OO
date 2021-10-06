@@ -6,18 +6,22 @@ namespace bank_oo
     {
         static void Main(string[] args)
         {
-            Funcionario funcionarioFelipe = new Funcionario();
-            funcionarioFelipe.Nome = "Felipe";
-            funcionarioFelipe.CPF = "123.123.123-23";
-            funcionarioFelipe.Cargo = "Vendedor";
-            funcionarioFelipe.Salario = 1000;
+            Funcionario funcionarioFelipe = new Funcionario(){
+                Nome = "Felipe",
+                CPF = "123.123.123-23",
+                Cargo = "Vendedor",
+                Salario = 1000
+            };
 
-            Funcionario funcionarioMaria = new Funcionario();
-            funcionarioMaria.Nome = "Maria";
-            funcionarioMaria.CPF = "456.456.456-56";
-            funcionarioMaria.Cargo = "Vendedora";
-            funcionarioMaria.Salario = 1000;
+            funcionarioFelipe.Bonificacao = funcionarioFelipe.Salario;
 
+            Funcionario funcionarioMaria = new Funcionario(){
+                Nome = "Maria",
+                CPF = "456.456.456-56",
+                Cargo = "Vendedora",
+                Salario = 1000
+            };
+            
             ContaCorrente contaDaBruna = new ContaCorrente("Bruna Soares Magalhães", 1234, 120, funcionarioFelipe); //Felipe
             ContaCorrente contaDaStefany = new ContaCorrente("Stefany", 1234, 100.50, funcionarioMaria); //Maria
             ContaCorrente contaDoPedro = new ContaCorrente("Pedro", 1234, 1500, funcionarioMaria); //Maria
@@ -71,6 +75,8 @@ namespace bank_oo
 
             Console.WriteLine("Total de contas criadas: " + ContaCorrente.TotalDeContasCriadas);
             Console.WriteLine("Total de comissão a ser pago: " + ContaCorrente.TotalDeComissao);
+
+            Console.WriteLine("A bonificação do vendedor é de: " + funcionarioFelipe.Bonificacao);
         }
     }
 
