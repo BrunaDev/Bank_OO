@@ -9,4 +9,10 @@ public class Vendedor : Funcionario {
              _bonificacao += value * 0.02;
         }
      }
+
+     public override int CalcularFerias ()
+     {
+         var dias_ferias = 20 + NumeroClientesAtendidos * 1;
+         return dias_ferias;
+     }
 }

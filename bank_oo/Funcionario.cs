@@ -4,6 +4,7 @@ public abstract class Funcionario {
     public double Salario { get; set; }
     public double Comissao { get; set; }
     protected double _bonificacao;
+
     public virtual double Bonificacao { 
         get{
             return _bonificacao;
@@ -12,4 +13,6 @@ public abstract class Funcionario {
              _bonificacao += value * 0.01;
         }
      }
+
+     public abstract int CalcularFerias ();
 }

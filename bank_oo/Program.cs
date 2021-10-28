@@ -9,7 +9,8 @@ namespace bank_oo
             Gerente gerenteCarlos = new Gerente(){
                 Nome = "Carlos",
                 CPF = "987.988.987.87",
-                Salario = 2000
+                Salario = 2000,
+                NumeroDeAgencias = 5
             };
 
             gerenteCarlos.Bonificacao = gerenteCarlos.Salario;
@@ -17,7 +18,8 @@ namespace bank_oo
             Vendedor vendedorFelipe = new Vendedor(){
                 Nome = "Felipe",
                 CPF = "123.123.123-23",
-                Salario = 1000
+                Salario = 1000,
+                NumeroClientesAtendidos = 3
             };
 
             vendedorFelipe.Bonificacao = vendedorFelipe.Salario;
@@ -32,8 +34,9 @@ namespace bank_oo
             ContaCorrente contaDaStefany = new ContaCorrente("Stefany", 1234, 100.50, vendedorMaria); //Maria
             ContaCorrente contaDoPedro = new ContaCorrente("Pedro", 1234, 1500, vendedorFelipe); //Maria
 
-            Console.WriteLine("O saldo da conta da Barbara é: " + contaDaBruna.Saldo);
+            Console.WriteLine("o vendedor terá " + vendedorFelipe.CalcularFerias() + " dias de férias");
+            Console.WriteLine("o gerente terá: " + gerenteCarlos.CalcularFerias() + " dias de férias");
+
         }
     }
-
 }
