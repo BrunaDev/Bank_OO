@@ -34,7 +34,7 @@ namespace bank_oo
             ContaCorrente contaDaStefany = new ContaCorrente("Stefany", 1234, 100.50, vendedorMaria); //Maria
             ContaCorrente contaDoPedro = new ContaCorrente("Pedro", 1234, 1500, vendedorFelipe); //Maria
 
-            Console.WriteLine("o vendedor terá " + vendedorFelipe.CalcularFerias() + " dias de férias");
+            Console.WriteLine("o vendedor receberá " + vendedorFelipe.RemuneracaoTotal(vendedorFelipe.Salario, 1000));
             Console.WriteLine("o gerente terá: " + gerenteCarlos.CalcularFerias() + " dias de férias");
 
         }
