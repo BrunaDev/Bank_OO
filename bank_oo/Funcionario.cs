@@ -17,10 +17,10 @@ public abstract class Funcionario : PessoaFisica{
      public abstract int CalcularFerias ();
 
     public double RemuneracaoTotal(double Salario){
-         return Salario * 12 + Salario;
+         return Salario * 13 + Salario;
     }
 
      public double RemuneracaoTotal(double Salario, double Bonificacao){
-         return Salario * 12 + Salario + Bonificacao;
+         return Salario * 13 + Salario + Bonificacao;
      }
 }

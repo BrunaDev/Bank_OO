@@ -1,14 +1,14 @@
             Console.WriteLine("O titular da conta é: "+contaDaBruna.Titular);
             Console.WriteLine("O saldo da conta da Bruna é: " + contaDaBruna.Saldo);
-            Console.WriteLine("O vendedor responsável foi o: " + funcionarioFelipe.Nome);
+            Console.WriteLine("O vendedor responsável foi o: " + vendedorJoseph.Nome);
 
             Console.WriteLine("O titular da conta é: "+contaDaStefany.Titular);
             Console.WriteLine("O saldo da conta da Stefany é: " + contaDaStefany.Saldo);
-            Console.WriteLine("O vendedor responsável foi a: " + funcionarioMaria.Nome);
+            Console.WriteLine("O vendedor responsável foi a: " + vendedorMaria.Nome);
 
             Console.WriteLine("O titular da conta é: "+contaDoPedro.Titular);
             Console.WriteLine("O saldo da conta do Pedro é: " + contaDoPedro.Saldo);
-            Console.WriteLine("O vendedor responsável foi a: " + funcionarioMaria.Nome);
+            Console.WriteLine("O vendedor responsável foi a: " + vendedorFelipe.Nome);
 
             Console.WriteLine("---------------------------------------------------");
 

@@ -6,13 +6,13 @@ public class Gerente : Funcionario {
             return _bonificacao;
         }
         set{
-             _bonificacao += value * 0.08;
+             _bonificacao += value * 0.05;
             }
         }
 
         public override int CalcularFerias ()
         {
-            var dias_ferias = 20 + NumeroDeAgencias * 2;
+            var dias_ferias = 30 + NumeroDeAgencias * 5;
             return dias_ferias;
         }
 }
